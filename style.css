@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("dj.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+}
+
+.logo {
+    color: #00ffcc;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #25D366; /* WhatsApp green */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #128C7E;
+    transform: scale(1.05);
+}
+
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.music-box {
+    margin-top: 20px;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: #00ffcc;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+}
+.dj-photo {
+    width: 180px;
+    height 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid #00ffcc;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dj-logo {
+    width: 220px;
+    animation: pulseGlow 3s infinite ease-in-out,
+               floatLogo 4s infinite ease-in-out;
+    filter: drop-shadow(0 0 20px #00ffcc);
+}
+
+/* Glow + Pulse */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 15px #00ffcc);
+    }
+    50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 35px #00ffcc);
+    }
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 15px #00ffcc);
+    }
+}
+
+/* Floating Effect */
+@keyframes floatLogo {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
